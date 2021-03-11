@@ -8,14 +8,19 @@ layout: default
 		          <title>{{site.data.details.name}}'s First CV</title>
 			    </head>
 			      <body>
-				          <h1> {{site.data.details.name}}!</h1>
-				      <h1> Education : {{site.data.details.education}} </h1>
+				      <a href="pdf/cv.pdf" style="float:right">Get PDF </a>    
+				  <h1> {{site.data.details.name}}</h1>
+				  <ul> 
+						  <li style="font-size:30px"> Education : {{site.data.details.education}}</li>
+					  </ul>
 				      
-				      <h1> Languages :{{site.data.details.languages}} </h1>
+					   <ul>  
+						   <li style="font-size:30px">Languages :{{site.data.details.languages}}</li>
+						  </ul> 
 					      <p>Reach me at:
 					          <ul>
 							        {% for url in site.data.details.urls %}
-								        <li><a href="http://{{url}}">{{url}}</a></li>
+								        <li><a href="mailto:http://{{url}}">{{url}}</a></li>
 									      {% endfor %}
 									          </ul>
 										    </body>
